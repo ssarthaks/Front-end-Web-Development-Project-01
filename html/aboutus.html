@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonsiePlantation</title>
+    <link rel="stylesheet" href="../css/styling.css">
+    <style>
+        body {
+            /* Setting background image and fitting the image to the screen */
+            background-image: url("../images/background/background.png");
+            /* Full height
+                Center and scale the image nicely 
+                background-repeat: no-repeat;
+                background-size: cover; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Helvetica;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <script src="../js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- Making separate divisions for each sector in the webpage for making styling easier and code understandable -->
+    <!-- Writing code for the upper head part of the webpage -->
+    <div class="headcontainer">
+        <div class="left">
+            <a href="../index.html"><img src="../images/logo/logoo.png" alt="LogoPicture"></a>
+        </div>
+        <div class="middle">
+            <h1 style="text-align:center; font-size: 60px; color:white; font-family:Lucida Handwriting;">
+                The Living Art Of Bonsai
+            </h1>
+            <p style="text-align:center;">
+                <i><b>Save the stonewall to build the levees.</i>- Author: Lloyd Doggett</b>
+            </p>
+        </div>
+
+        <!-- creating nav bar for easier UI -->
+        <div class="navbar">
+            <ul id="nav1">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../html/products.html">PRODUCTS</a></li>
+                <li><a href="../html/learntocare.html">LEARN TO CARE</a></li>
+                <li><a href="../html/research.html">RESEARCH</a></li>
+                <li><a href="../html/contactus.html">CONTACT US</a></li>
+                <li><a class="active" href="aboutus.html">ABOUT US</a></li>
+                <li><a href="../html/blog.html">BLOG</a></li>
+                <li><a href="../html/login.html" class="login">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header part of the program is done -->
+
+    <!-- Feedback Form -->
+    <!-- division is created and form is created inside of it -->
+    <div class="feedbackform">
+        <h1 style="text-align:center;">Feedback Form</h1>
+        <form name="myform" action="aboutus.html" onsubmit="return validatefeedbackform()">
+
+            <label><b>Enter Your First Name</b></label><br>
+            <input type="text" name="fname" size="60" placeholder="First Name">
+            <br>
+            <label><b>Enter Your Last Name</b></label><br>
+            <input type="text" name="lname" size="60" placeholder="Last Name">
+            <br>
+            <label><b>Enter Your E-mail</b></label><br>
+            <input type="email" name="email" size="60" placeholder="E-mail">
+            <br>
+            <label><b>Enter Your Address</b></label><br>
+            <input type="text" name="add" size="60" placeholder="Address">
+            <br>
+            <label><b>Feedback</b></label><br>
+            <textarea rows="4" cols="59"></textarea>
+            <br>
+            <input type="submit" name="submit" value="Send Message">
+        </form>
+    </div>
+    <hr class="linediff">
+    <!-- Feedback Form Ends HERE -->
+
+
+    <!-- DESCRIPTION OF OUR TEAM AND TEAMMATES -->
+    <div class="about_us">
+        <div class="about_usheading">
+            <h1 style="text-align:center;"><i>About The Bonsai Productions</i></h1>
+            <h3 style="text-align:center;font-size:25px;"><i>Who We Are</i></h3>
+            <p style="text-align:center;">
+                We are a group of students from Team No.6, Class C13, Islington College, Kathmandu. We have given
+                our best towards this coursework for it to standout amongst the other courseworks submitted. We faced
+                lots of challenges while building this website as this website included mostly all of the tags and
+                functions of HTML, CSS and JAVASCRIPT. After building this website, we have throughly gained
+                practical knowledge on HTML, CSS and JAVASCRIPT.
+            </p>
+            <h1 style="text-align:center;margin-top:3rem;"><i><u>Portfolio Of Our Team Members Are Below</u></i></h1>
+
+            <!-- PORTFOLIO CODING IS DONE BELOW -->
+
+            <!-- PORTFOLIO OF MEMBER 1 -->
+            <div class="member1">
+                <div class="profpicleft">
+                    <img src="../images/teampitures/SarthakSharma.jpg" alt="TeamMemberPhoto" class="teammempic">
+                </div>
+                <div class="portfolioleft">
+                    <p>Name:<b>Sarthak Sharma</b></p>
+                    <p>Age:19</p>
+                    <p><b>Team Leader</b></p>
+                    <p>
+                        My background is web programmer currently studying <br>
+                        Bsc.Computing in Islington College.I am experienced in<br>
+                        working with people and have worked as an assistant<br>
+                        coder in one of the StartUp Company.
+                    </p>
+                    <p><b><u>Education Qualification</u></b></p>
+                    <p>+2 Graduate From GEMS Institute of Higher Education, Dhapakhel</p>
+                    <p><b><u>Experience</u></b></p>
+                    <p>-Previously created a sample website of GEMS SCHOOL for practice.</p>
+                </div>
+            </div>
+
+            <hr class="linediff">
+
+            <!-- PORTFOLIO OF MEMBER 2 -->
+            <div class="member">
+                <div class="profpicright">
+                    <img src="../images/teampitures/PrabeshShrestha.jpg" alt="TeamMemberPhoto" class="teammempic">
+                </div>
+                <div class="portfolioright">
+                    <p>Name:<b>Prabesh Shrestha</b></p>
+                    <p>Age:19</p>
+                    <p><b>Team Member</b></p>
+                    <p>
+                        My background is web programmer currently studying <br>
+                        Bsc.Computing in Islington College.I am a fresher in<br>
+                        this field<br>
+                    </p>
+                    <p><b><u>Education Qualification</u></b></p>
+                    <p>+2 Graduate From Himalayan WhiteHouse College, Tinkune</p>
+                    <p><b><u>Experience</u></b></p>
+                    <p>-Fresher</p>
+                </div>
+            </div>
+
+            <hr class="linediff">
+
+            <!-- PORTFOLIO OF MEMBER 3 -->
+            <div class="member">
+                <div class="profpicleft">
+                    <img src="../images/teampitures/RanaveerKarki.jpg" alt="TeamMemberPhoto" class="teammempic">
+                </div>
+                <div class="portfolioleft">
+                    <p>Name:<b>Ranaveer Karki</b></p>
+                    <p>Age:19</p>
+                    <p><b>Team Member</b></p>
+                    <p>
+                        My background is web programmer currently studying <br>
+                        Bsc.Computing in Islington College.I am a fresher in<br>
+                        this field<br>
+                    </p>
+                    <p><b><u>Education Qualification</u></b></p>
+                    <p>+2 Graduate From Global College of Management, Baneshwor</p>
+                    <p><b><u>Experience</u></b></p>
+                    <p>-Fresher</p>
+                </div>
+            </div>
+
+            <hr class="linediff">
+
+            <!-- PORTFOLIO OF MEMBER 4 -->
+            <div class="member">
+                <div class="profpicright">
+                    <img src="../images/teampitures/DarshanMainali.jpg" alt="TeamMemberPhoto" class="teammempic">
+                </div>
+                <div class="portfolioright">
+                    <p>Name:<b></b>Darshan Mainali</b></p>
+                    <p>Age:19</p>
+                    <p><b>Team Member</b></p>
+                    <p>
+                        My background is web programmer currently studying <br>
+                        Bsc.Computing in Islington College.I am a fresher in<br>
+                        this field<br>
+                    </p>
+                    <p><b><u>Education Qualification</u></b></p>
+                    <p>+2 Graduate From Deerwalk Sifal School, Sifal</p>
+                    <p><b><u>Experience</u></b></p>
+                    <p>-Fresher</p>
+                </div>
+            </div>
+
+            <hr class="linediff">
+
+        </div>
+    </div>
+
+    <hr class="linediff">
+</body>
+
+</html>

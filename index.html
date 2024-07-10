@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonsiePlantation</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <style>
+        body {
+            /* Setting background image and fitting the image to the screen */
+            background-image: url("images/background/background.png");
+            /* Full height
+            Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Helvetica;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body onload="welcome()">
+
+    <!-- Making separate divisions for each sector in the webpage for making styling easier and code understandable -->
+    <!-- Writing code for the upper head part of the webpage -->
+    <div class="headcontainer">
+        <div class="left">
+            <a href="homepage.html"><img src="images/logo/logoo.png" alt="LogoPicture"></a>
+        </div>
+        <div class="middle">
+            <h1 style="text-align:center; font-size: 60px; color:white; font-family:Lucida Handwriting;">
+                The Living Art Of Bonsai
+            </h1>
+            <p style="text-align:center;">
+                <i><b>Save the stonewall to build the levees.</i>- Author: Lloyd Doggett</b>
+            </p>
+        </div>
+
+        <!-- creating nav bar for easier UI -->
+        <div class="navbar">
+            <ul id="nav1">
+                <li><a class="active" href="homepage.html">HOME</a></li>
+                <li><a href="html/products.html">PRODUCTS</a></li>
+                <li><a href="html/learntocare.html">LEARN TO CARE</a></li>
+                <li><a href="html/research.html">RESEARCH</a></li>
+                <li><a href="html/contactus.html">CONTACT US</a></li>
+                <li><a href="html/aboutus.html">ABOUT US</a></li>
+                <li><a href="html/blog.html">BLOG</a></li>
+                <li><a href="html/login.html" class="login">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header part of the program is done -->
+
+    <!-- Body part of the webpage code is below  -->
+    <div class="bodycontainer">
+        <h3 class="bodyheading1"><i>BONSAI PLANTS</i></h3>
+        <p class="bodyparagraph1">The word “Bon-sai” (often misspelled as bonzai or banzai) is a Japanese term which,
+            literally translated, means “planted in a container”.
+            This art form is derived from an ancient Chinese horticultural practice,
+            part of which was then redeveloped under the influence of Japanese Zen Buddhism.It has been around for well
+            over a thousand years. The ultimate goal of growing a Bonsai is to create a miniaturized but
+            realistic representation of nature in the form of a tree. Bonsai are not genetically dwarfed
+            plants, in fact, any tree species can be used to grow one.
+        </p>
+        <h3 class="bodyheading1"><i>What Do You Exactly Mean By Bonsai Plants?</i></h3>
+        <p class="bodyparagraph1">Techniques such as pinching buds, pruning and wiring branches, and carefully
+            restricting
+            but not abandoning fertilizers are used to limit and redirect healthy growth. Most commonly
+            kept under four feet (or about a meter) in height, Bonsai are not genetically dwarfed plants.
+            However, plants with smaller leaves do make these compositions easier to design. In fact, any
+            plant species that has a woody stem or trunk, grows true branches, can be successfully grown in a
+            container to restrict its roots/food storage capability, and has smaller or reducible-leaves can be
+            used to create a Bonsai.Look around at your trees, bushes, hedges, the copses in your yard or park, plants
+            in the nursery or wild landscape - essentially any of those can be starter material. Carefully collected
+            during
+            the appropriate growing or dormant season with proper permission, your composition is begun. Most native
+            plants
+            can be grown outdoors; material from more tropical climates needs at least some protection from the elements
+            in
+            the temperate zones.
+        </p>
+    </div>
+    <!-- A line is created just so the website looks better -->
+    <hr class="linediff">
+    <h3 class="gridheading"><i>Here are some of the Best Looking Bonsai Plants Available</i></h3>
+
+
+    <!-- A slideshow container is made -->
+    <div class="slideshowcontainer">
+        <div id="slider">
+            <img src="images/plants/JuniperBonsai.png" id="slider-image" width="350" height="300">
+            <p id="caption">JuniperBonsai</p>
+        </div>
+    </div>
+    <br>
+    <!-- a button is created so that we can directly go to products page without the need of scrolling up again -->
+    <a href="html/products.html"><button class="explore">Explore More Plants</button></a>
+    <hr class="linediff">
+</body>
+
+<script>
+    function welcome() {
+        alert("Welcome to BonsaiProductions !!!")
+    }
+    //Image slider using javascript array
+    var images = [
+        "images/plants/FicusBonsai.png",
+        "images/plants/ShimpakuJuniper.png",
+        "images/plants/CrepeMyrtle.png",
+        "images/plants/ScheffleraBonsaidüngen.png",
+        "images/plants/JuniperBonsai.png"
+    ];
+
+    var captions = [
+        "FicusBonsai",
+        "ShimpakuJuniper",
+        "CrepeMyrtle",
+        "ScheffleraBonsaidüngen",
+        "JuniperBonsai"
+    ];
+
+    var currentImage = 0;
+
+    function changeImage() {
+        document.getElementById("slider-image").src = images[currentImage];
+        document.getElementById("caption").innerHTML = captions[currentImage];
+        currentImage++;
+        if (currentImage >= images.length) {
+            currentImage = 0;
+        }
+    }
+
+    setInterval(changeImage, 5000);
+</script>
+
+</html>

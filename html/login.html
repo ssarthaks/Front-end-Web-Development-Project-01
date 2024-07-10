@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonsiePlantation</title>
+    <link rel="stylesheet" href="../css/styling.css">
+    <style>
+        body {
+            /* Setting background image and fitting the image to the screen */
+            background-image: url("../images/background/background.png");
+            /*Center and scale the image nicely 
+                background-repeat: no-repeat;
+                background-size: cover; */
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: Helvetica;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <script src="../js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- Making separate divisions for each sector in the webpage for making styling easier and code understandable -->
+    <!-- Writing code for the upper head part of the webpage -->
+    <div class="headcontainer">
+        <div class="left">
+            <a href="../index.html"><img src="../images/logo/logoo.png" alt="LogoPicture"></a>
+        </div>
+        <div class="middle">
+            <h1 style="text-align:center; font-size: 60px; color:white; font-family:Lucida Handwriting;">
+                The Living Art Of Bonsai
+            </h1>
+            <p style="text-align:center;">
+                <i><b>Save the stonewall to build the levees.</i>- Author: Lloyd Doggett</b>
+            </p>
+        </div>
+
+        <!-- creating nav bar for easier UI -->
+        <div class="navbar">
+            <ul id="nav1">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../html/products.html">PRODUCTS</a></li>
+                <li><a href="../html/learntocare.html">LEARN TO CARE</a></li>
+                <li><a href="../html/research.html">RESEARCH</a></li>
+                <li><a href="../html/contactus.html">CONTACT US</a></li>
+                <li><a href="../html/aboutus.html">ABOUT US</a></li>
+                <li><a href="../html/blog.html">BLOG</a></li>
+                <li><a class="active" href="login.html"
+                        style="background-color: rgb(42, 103, 42);border-radius: 15px;">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header part of the program is done -->
+
+    <!-- Login form coding is done below -->
+    <div class="form">
+        <form name="myform" action="../index.html" onsubmit="return validatelogin()">
+            <h1 style="color:white;"><i>Welcome to Bonsai World</i></h1>
+            <label><b>Username</b></label><br>
+            <input type="text" name="uname" size="49" placeholder="Username">
+            <br>
+            <br>
+            <label><b>Password</b></label><br>
+            <input type="password" name="pwd" size="49" placeholder="Password">
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

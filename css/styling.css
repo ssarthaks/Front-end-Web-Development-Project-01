@@ -1,0 +1,529 @@
+/* CSS OF HOMEPAGE/Index STARTS */
+/* setting background color */
+.headcontainer {
+    background-color: rgba(60, 59, 59, 0.836);
+    transition-duration: 0.6s;
+    border-radius: 10px 10px 0 0;
+    margin: 0px;
+    padding: 0;
+}
+
+/* Styling of the head container starts from here */
+/*displaying container in same line centering the middle part of head container */
+.headcontainer .middle {
+    display: inline-block;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/* displaying the container in the same line */
+.headcontainer .left {
+    display: inline-block;
+}
+
+/* aligning logo with texts */
+.headcontainer .left img {
+    width: 180px;
+    margin-left: 100px;
+}
+
+/* managing heading and UI interface */
+.headcontainer .middle p {
+    font-size: 20px;
+    color: white;
+}
+
+/* CSS OF UPPER HEADER PART IS DONE */
+
+
+/* STYLING OF NAV BAR STARTS FROM HERE*/
+.headcontainer .navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: auto;
+    width: fit-content;
+}
+
+.headcontainer .navbar ul li {
+    text-decoration: none;
+    font-size: 21px;
+    float: left;
+}
+
+.headcontainer .navbar ul a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    padding: 25px 30px;
+}
+
+/* changes color when cursor is hovered over navbar */
+.headcontainer .navbar ul li a:hover {
+    color: rgb(49, 165, 49);
+    transition-duration: 0.4s;
+}
+
+/* The active webpage is coloured in nav bar */
+.headcontainer .navbar ul li a.active {
+    color: rgb(49, 165, 49);
+}
+
+.login {
+    background-color: rgb(42, 103, 42);
+    border-radius: 15px;
+}
+
+/* CSS OF THE NAV BAR IS DONE */
+
+
+/* STYLING OF THE BODY PART STARTS */
+.bodycontainer {
+    margin-top: 4rem;
+    ;
+}
+
+.bodyparagraph1 {
+    text-align: center;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: larger;
+}
+
+.bodyheading1 {
+    text-align: center;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 25px;
+}
+
+.bodyimg1 {
+    width: 40%;
+}
+
+/* STYLING OF THE BODY PART IS DONE */
+
+
+/* STYLING THE LINE BETWEEN BODY-CONTAINER AND IMG-CONTAINER */
+.linediff {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid white;
+    background-color: white;
+    width: 85%;
+}
+
+/* STYLING THE LINE BETWEEN BODY-CONTAINER AND IMG-CONTAINER IS DONe*/
+
+
+/* STYLING OF THE IMAGES OF PLANTS DISPLAYED IN HOMEPAGE STARTS */
+
+.slideshowcontainer {
+    margin-top: 3rem;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.gridheading {
+    font-size: 25px;
+    color: White;
+    text-align: center;
+}
+
+#caption {
+    color: white;
+    text-align: center;
+}
+
+
+/* STYLING OF THE IMAGES OF PLANTS DISPLAYED IN HOMEPAGE IS DONE */
+
+/* Explore Button Styling */
+.explore {
+    background-color: #0c6329;
+    color: white;
+    padding: 20px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 4rem;
+}
+
+.explore:hover {
+    background-color: #1edb5d;
+}
+
+/* CSS OF HOMEPAGE IS DONE */
+
+
+
+/* CSS OF LOGIN PAGE STARTS */
+/* Styling the login page contents */
+.form h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(78, 119, 104, 0.856);
+    width: 25%;
+    padding: 20px;
+    margin-top: 4rem;
+    border-radius: 1rem;
+}
+
+.form label {
+    font-size: 20px;
+    color: white;
+    font-family: Helvetica;
+    margin-left: 35%;
+    margin-right: 35%
+}
+
+.form input {
+    display: inline-block;
+    padding: 10px;
+}
+
+.form input {
+    margin-top: 10px;
+}
+
+.form input[type="submit"] {
+    background-color: #0c6329;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 101%;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* CSS OF THE LOGIN PAGE IS DONE */
+
+
+
+/* CSS OF THE PRODUCTS PAGE STARTS HERE */
+
+.boxes .products {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(95, 94, 94, 0.547);
+    width: 450px;
+}
+
+.boxes {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.products img {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.btn {
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 17px;
+    color: white;
+    background-color: #0c6329;
+    border: 0px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #1edb5d;
+}
+
+.img-container {
+    margin-top: 2rem;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    /* manages the pic in column  */
+    color: white;
+}
+
+.img-container p {
+    text-align: center;
+}
+
+.img-container s {
+    margin-left: 43%;
+}
+
+
+/* CSS OF THE PRODUCTS PAGE ENDED */
+
+
+
+/* CSS OF THE CONTACT US PAGE STARTS */
+/* Styling of header part of the contact form */
+.headingcontact {
+    color: white;
+    padding: 40px;
+    margin-left: 30%;
+    margin-right: 29%;
+}
+
+.headingcontact h1 {
+    font-size: 60px;
+    margin-left: 75px;
+}
+
+.headingcontact h3 {
+    font-size: 35px;
+    margin-left: 100px;
+}
+
+.headingcontact img {
+    width: 50px;
+    height: 45px;
+    float: left;
+}
+
+.headingcontact p {
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+.block {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+/* Styling of heading part of contact form ends */
+
+/* Styling of the form of contact form starts */
+.contactform {
+    background-color: rgba(78, 119, 104, 0.856);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 4rem;
+    border-radius: 0.7rem;
+    color: white;
+}
+
+.contactform input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.contactform input[type="submit"] {
+    background-color: #0c6329;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 101%;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* CSS OF THE CONTACT US PAGE FINISHED */
+
+
+
+/* CSS OF LEARN TO CARE WEBPAGE STARTS HERE */
+
+.carebody1 {
+    color: white;
+    background-color: rgba(78, 119, 104, 0.856);
+    padding: 15px;
+    margin-top: 3rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.careheading2 {
+    color: white;
+    background-color: rgba(78, 119, 104, 0.856);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* CSS OF LEARN TO CARE WEBPAGE FINISHED*/
+
+
+
+/* CSS OF RESEARCH PAGE STARTS HERE */
+
+.research-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    /* manages the pic in column  */
+    color: white;
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.researchheading {
+    font-size: 25px;
+}
+
+.screenshot {
+    background-color: rgba(60, 59, 59, 0.836);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.screenshot img {
+    height: 450px;
+}
+
+.researchdescription {
+    background-color: rgba(60, 59, 59, 0.836);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    margin-top: -16px;
+    margin-left: 4px;
+    margin-right: 3px;
+}
+
+/* CSS OF RESEARCH PAGE FINISHED */
+
+
+
+/* CSS OF ABOUTUS PAGE STARTS HERE */
+.about_us {
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_usheading {
+    background-color: rgba(60, 59, 59, 0.836);
+    padding: 15px;
+    margin-top: 3rem;
+    border-radius: 10px 10px 0 0;
+}
+
+/* CSS of Team Members Discription */
+.profpicleft {
+    float: left;
+}
+
+.member1 {
+    margin-bottom: 6rem;
+}
+
+.member {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.profpicright {
+    float: right;
+}
+
+.portfolioleft p {
+    text-align: left;
+}
+
+.portfolioright p {
+    text-align: right;
+}
+
+.teammempic {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+.portfolioleft {
+    margin-left: 24rem;
+}
+
+.portfolioright {
+    margin-right: 24rem;
+}
+
+
+/* CSS OF FEEDBACK FORM INSIDE ABOUTUS */
+.feedbackform {
+    background-color: rgba(78, 119, 104, 0.856);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 4rem;
+    border-radius: 0.7rem;
+    color: white;
+}
+
+.feedbackform input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.feedbackform input[type="submit"] {
+    background-color: #0c6329;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 101%;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* CSS OF ABOUTUS PAGE FINISHED*/
+
+
+/* CSS OF BLOG PAGE STARTS */
+.blogbody {
+    background-color: rgba(60, 59, 59, 0.836);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 3rem;
+}
+
+.blogbody p {
+    text-align: left;
+}
+
+/* Floating image on blog page right and left */
+.blogimgfloatleft {
+    float: left;
+    width: 375px;
+    height: 680px;
+}
+
+.blogimgfloatright {
+    float: right;
+    width: 375px;
+    height: 680px;
+}

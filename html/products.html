@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonsiePlantation</title>
+    <link rel="stylesheet" href="../css/styling.css">
+    <style>
+        body {
+            /* Setting background image and fitting the image to the screen    */
+            /* height: 100%; */
+            background-image: url("../images/background/background.png");
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Helvetica;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <script src="../js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- Making separate divisions for each sector in the webpage for making styling easier and code understandable -->
+    <!-- Writing code for the upper head part of the webpage -->
+    <div class="headcontainer">
+        <div class="left">
+            <a href="../index.html"><img src="../images/logo/logoo.png" alt="LogoPicture"></a>
+        </div>
+        <div class="middle">
+            <h1 style="text-align:center; font-size: 60px; color:white; font-family:Lucida Handwriting;">
+                The Living Art Of Bonsai
+            </h1>
+            <p style="text-align:center;">
+                <i><b>Save the stonewall to build the levees.</i>- Author: Lloyd Doggett</b>
+            </p>
+        </div>
+
+        <!-- creating nav bar for easier UI -->
+        <div class="navbar">
+            <ul id="nav1">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a class="active" href="products.html">PRODUCTS</a></li>
+                <li><a href="../html/learntocare.html">LEARN TO CARE</a></li>
+                <li><a href="../html/research.html">RESEARCH</a></li>
+                <li><a href="../html/contactus.html">CONTACT US</a></li>
+                <li><a href="../html/aboutus.html">ABOUT US</a></li>
+                <li><a href="../html/blog.html">BLOG</a></li>
+                <li><a href="../html/login.html" class="login">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header part of the program is done -->
+
+    <!-- products displaying part of program starts -->
+    <!-- Flexbox is made and products are displayed 3 rows and 3columns -->
+    <div class="img-container">
+        <h3 class="gridheading"><i>Plants are Displayed Below</i></h3>
+        <!-- division no. 1 -->
+        <div class="boxes">
+            <div class="products">
+                <img src="../images/plants/ScheffleraBonsaidüngen.png" width="350" height="300" alt="ScheffleraBonsai">
+                <p>Schefflera Bonsai düngen</p>
+                <p class="plantsdesc">Age of tree 10years. Trained since 2009. Schefflera arboricola is a popular plant,
+                    also known as the Hawaiian umbrella tree and commonly used for schefflera bonsai.
+                    Although it is not considered a “true” bonsai tree, schefflera bonsai trees are the most popular
+                    types of indoor Bonsai. Theycan tolerate low humidity and dim light but they grow much better and
+                    produce
+                    smaller leaves if they get much light.</p>
+                <p>Rs.7455/-</p>
+                <button class="btn" onclick="buyprod1()">Buy Now</button>
+            </div>
+            <div class="products">
+                <img src="../images/plants/JuniperBonsai.png" width="350" height="300" alt="JuniperBonsai">
+                <p>Juniper Bonsai</p>
+                <p class="plantdesc">Age of tree 29years. Trained since 1901. Juniper bonsai trees are the
+                    quintessential bonsai specimen. Beloved for being
+                    low-maintenance and easy to shape, juniper bonsai are particularly good starter trees. Master just
+                    a few basic techniques and you’ll have a healthy, one-of-a-kind tree in no time!</p>
+                <s>Rs.19500/-</s>
+                <p>Offer- Rs.17500/-</p>
+                <button class="btn" onclick="buyprod2()">Buy Now</button>
+            </div>
+            <div class="products">
+                <img src="../images/plants/FicusBonsai.png" width="350" height="300" alt="FicusBonsai">
+                <p>Ficus Bonsai</p>
+                <p class="plantdesc">Age of tree 16years.Trained since 1996. Ficus bonsai tree is ideal for novices.
+                    Ficus bonsai maintenance is fairly low
+                    and can withstand situations that other bonsai trees struggle with. Ficus trees can also be used
+                    as indoor bonsai trees, making them suitable for any environment.</p>
+                <s>Rs.13999/-</s>
+                <p>Offer- Rs.11999/-</p>
+                <button class="btn" onclick="buyprod3()">Buy Now</button>
+            </div>
+        </div>
+        <hr class="linediff">
+        <!-- same name division no. 2 cause we can use flex styling to style all of them at once -->
+        <div class="boxes">
+            <div class="products">
+                <img src="../images/plants/PinusParviflora.png" width="350" height="300" alt="PinusParviflora">
+                <p>Pinus Parviflora</p>
+                <p class="plantdesc">Age of tree 21years. Trained since 1950. Pinus parviflora is native to Japan and
+                    Korea. It is an evergreen conifer that typically grows to 30-50'
+                    tall in cultivation. Trees have a dense pyramidal habit when young, but with age develop more
+                    spreading branching and a flatter top.</p>
+                <s>Rs.10500/-</s>
+                <p>Rs.8900/-</p>
+                <button class="btn" onclick="buyprod4()">Buy Now</button>
+            </div>
+            <div class="products">
+                <img src="../images/plants/PortulacariaAfra.png" width="350" height="300" alt="PortulacariaAfra">
+                <p>Portulacaria Afra</p>
+                <p class="plantdesc">Age of tree 8years. Trained since 2010. Elephant bush, Portulacaria afra, is a
+                    perennial succulent shrub from South Africa that is a popular succulent garden plant around the
+                    world. It is easily grown as a seasonal accent plant or low maintenance houseplant in our part of
+                    the world.It has verigated leaves with green an white pink color these are low maintenance plants
+                    that
+                    are considered symbols of good luck!</p>
+                <p>Rs.3999/-</p>
+                <button class="btn" onclick="buyprod5()">Buy Now</button>
+            </div>
+            <div class="products">
+                <img src="../images/plants/JapaneseMaple.png" width="350" height="300" alt="JapaneseMaple">
+                <p>Japanese Maple</p>
+                <p class="plantdesc">Age of tree 32 years. Trained since 1986. This tree is one of a number
+                    of Japanese maples collected as seedlings in 1985, with styling started the following year.
+                    The tree was grown in various training pots until fairly mature as a bonsai, and was then potted
+                    into a bonsai pot in 2003.Japanese maples grow best when planted in well-drained, acidic soil that
+                    is
+                    high in organic matter.</p>
+                <p>Rs.15999/-</p>
+                <button class="btn" onclick="buyprod6()">Buy Now</button>
+            </div>
+        </div>
+        <hr class="linediff">
+        <!-- same name division no. 3 cause we can use flex styling to style all of them at once -->
+        <div class="boxes">
+            <div class="products">
+                <img src="../images/plants/ShimpakuJuniper.png" width="350" height="300" alt="ShimpakuJuniper">
+                <p>Shimpaku Juniper</p>
+                <p class="plantdesc">
+                    Age of tree 19 years. Trained since 1988. Shimpaku Juniper is a slow-growing evergreen shrub that
+                    typically grows over a period of 10 years. The curving base and the lines of the cascading
+                    branch are very pleasing. I grew this tree in a black plastic pot for 4-5 years before it was
+                    ready for a bonsai pot. To take good care, watering must be done up to 3 times a day in summer of
+                    7cm trees.</p>
+                <p>Rs.11500/-</p>
+                <button class="btn" onclick="buyprod7()">Buy Now</button>
+            </div>
+            <div class="products">
+                <img src="../images/plants/PortJacksonFig.png" width="350" height="300" alt="PortJacksonFig">
+                <p>Port Jackson Fig</p>
+                <p class="plantdesc">Age of tree 15years.Trained since 1867. Port Jackson fig can be styled to most
+                    bonsai styles and is very amenable to
+                    pruning. 'Styling' is best undertaken mid October to mid December. Trimming (or 'pinching') the
+                    tree's foliage is very important to its presentation as a bonsai..</p>
+                <s>Rs.11111/-</s>
+                <p>Rs.7999/-</p>
+                <button class="btn" onclick="buyprod8()">Buy Now</button>
+            </div>
+            <div class="products">
+                <img src="../images/plants/CrepeMyrtle.png" width="350" height="300" alt="CrepeMyrtle">
+                <p>Crepe Myrtle</p>
+                <p class="plantdesc">Age of tree 25 years. Trained since 2007. This bonsai came from a cutting
+                    which was ground-grown for a number of years. There was a remarkably ugly main trunk that was
+                    removed and later carved out. It flowers well.Late fall to early spring is the best time to plant
+                    this Bonsai.</p>
+                <s>Rs.12500/-</s>
+                <p>Rs.9999</p>
+                <button class="btn" onclick="buyprod9()">Buy Now</button>
+            </div>
+        </div>
+        <hr class="linediff">
+    </div>
+</body>
+
+</html>

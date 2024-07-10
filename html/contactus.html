@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonsiePlantation</title>
+    <link rel="stylesheet" href="../css/styling.css">
+    <style>
+        body {
+            /* Setting background image and fitting the image to the screen*/
+            background-image: url("../images/background/background.png");
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Helvetica;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <script src="../js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- Making separate divisions for each sector in the webpage for making styling easier and code understandable -->
+    <!-- Writing code for the upper head part of the webpage -->
+    <div class="headcontainer">
+        <div class="left">
+            <a href="../index.html"><img src="../images/logo/logoo.png" alt="LogoPicture"></a>
+        </div>
+        <div class="middle">
+            <h1 style="text-align:center; font-size: 60px; color:white; font-family:Lucida Handwriting;">
+                The Living Art Of Bonsai
+            </h1>
+            <p style="text-align:center;">
+                <i><b>Save the stonewall to build the levees.</i>- Author: Lloyd Doggett</b>
+            </p>
+        </div>
+
+        <!-- creating nav bar for easier UI -->
+        <div class="navbar">
+            <ul id="nav1">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../html/products.html">PRODUCTS</a></li>
+                <li><a href="../html/learntocare.html">LEARN TO CARE</a></li>
+                <li><a href="../html/research.html">RESEARCH</a></li>
+                <li><a class="active" href="contactus.html">CONTACT US</a></li>
+                <li><a href="../html/aboutus.html">ABOUT US</a></li>
+                <li><a href="../html/blog.html">BLOG</a></li>
+                <li><a href="../html/login.html" class="login">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header part of the program is done -->
+
+    <!-- CONTACT INFORMATION PART CODING STARTS -->
+    <div class="headingcontact">
+        <h1>Contact US</h1>
+        <h3>Contact Details</h3>
+        <div class="block">
+            <img src="../images/icons/locationicon.png">
+            <p><b>Our Location</p></b>
+            <u>
+                <a href="https://goo.gl/maps/ftJFvhx6fEnFE4oB7" style="color:white;" target="_blank">
+                    <p>Kamal Marg, Kathmandu</p>
+                </a>
+            </u>
+        </div>
+
+        <div class="block">
+            <img src="../images/icons/callicon.png">
+            <p><b>Call Us</p></b>
+            <u>
+                <p>+977-9860688334</p>
+            </u>
+            <u>
+                <p>+977-9841391063</p>
+            </u>
+        </div>
+
+        <div class="grid3">
+            <img src="../images/icons/emailicon.png">
+            <p><b>Our Email</p></b>
+            <u>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbtkbJzxvdPklPldMrXrHKnfLrnrHDRnxGkKcktvHddFDfplJdwJgwpCjGBzzwKbnxlZlX"
+                    style="color:white;" target="_blank">
+                    <p>bonsai.productions@gmail.com</p>
+                </a>
+            </u>
+            <u>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbtkbJzxvdPklPldMrXrHKnfLrnrHDRnxGkKcktvHddFDfplJdwJgwpCjGBzzwKbnxlZlX"
+                    style="color:white;" target="_blank">
+                    <p style="margin-left:50px;">bonsaiplant@bonsai.edu.np</p>
+                </a>
+            </u>
+        </div>
+    </div>
+    <hr class="linediff">
+
+    <!-- division is created and form is created inside of it -->
+    <div class="contactform">
+        <h1 style="text-align:center;">Send Us A Message</h1>
+        <form name="myform" action="contactus.html" onsubmit="return validateform()">
+
+            <label><b>Enter Your First Name</b></label><br>
+            <input type="text" name="fname" size="60" placeholder="First Name">
+            <br>
+            <label><b>Enter Your Last Name</b></label><br>
+            <input type="text" name="lname" size="60" placeholder="Last Name">
+            <br>
+            <label><b>Enter Your E-mail</b></label><br>
+            <input type="email" name="email" size="60" placeholder="E-mail">
+            <br>
+            <label><b>Enter Your Address</b></label><br>
+            <input type="text" name="add" size="60" placeholder="Address">
+            <br>
+            <label><b>Subject</b></label><br>
+            <input type="text" name="sub" size="60" placeholder="Subject">
+            <br>
+            <label><b>Comments</b></label><br>
+            <textarea rows="4" cols="59"></textarea>
+            <br>
+            <input type="submit" name="submit" value="Send Message">
+        </form>
+    </div>
+    <hr class="linediff">
+    <br>
+</body>
+
+</html>
